@@ -18,7 +18,7 @@ def main() -> None:
                         help='Path to the output file with source code')
     parser.add_argument('-m', '--mapping', type=str,
                         help=f'One or more mappings to use',
-                        choices=eng.get_valid_mappings(), nargs='+')
+                        choices=eng.get_valid_mappings(), nargs='+', required=True)
 
     args = parser.parse_args()
     substitute(args.in_file, args.out_file, eng, set(args.mapping))
