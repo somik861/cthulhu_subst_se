@@ -1,0 +1,25 @@
+# Simple program to test cthulhu_se
+
+main:
+    
+args:
+
+call_stack:
+
+work_stack:
+
+func_stack:
+
+empty:
+
+func_foo:
+    word add 2 2 3
+
+
+%init:
+    0 => @main
+    1 => @call_stack
+    2 => @work_stack
+    3 => @empty
+    4 => @empty
+    5 => @func_stack
